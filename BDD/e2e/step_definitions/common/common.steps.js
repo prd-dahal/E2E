@@ -12,14 +12,3 @@ When("I view the page from {string}", async (device) => {
 When("I visit url {string}", (url) => {
   cy.visit(url);
 });
-
-Then(
-  "I click on {string} th element of {string} of {string}",
-  (nthElement, selectorId, selectorValue) => {
-    cy.get(`[${selectorId}=${selectorValue}]`).eq(nthElement).click();
-  }
-);
-
-And("I type {string} on {string}", (typedValue, selectorId) => {
-  cy.get(`[name=${selectorId}]`).type(typedValue);
-});
