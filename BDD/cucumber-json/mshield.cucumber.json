@@ -1,0 +1,53 @@
+[
+  {
+    "description": "  Testing BDD",
+    "keyword": "Feature",
+    "name": "Mshield Test",
+    "line": 1,
+    "id": "mshield-test",
+    "tags": [],
+    "uri": "mshield.feature",
+    "elements": [
+      {
+        "id": "mshield-test;visit-mshield",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Visit Mshield",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I visit url \"https://onboard.mshield-dev.taksure.xyz/en/life-insurance/form\"",
+            "result": {
+              "status": "passed",
+              "duration": 3015000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I click on \"1\" th element of \"data-testid\" of \"packageCard\"",
+            "result": {
+              "status": "passed",
+              "duration": 275000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I type \"Pradeep\" on \"fullName\"",
+            "result": {
+              "status": "failed",
+              "error_message": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of undefined (reading 'length')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at o (https://js-agent.newrelic.com/nr-spa-1216.min.js:2:10360)\n    at r (https://js-agent.newrelic.com/nr-spa-1216.min.js:2:9976)\n    at r.<anonymous> (https://js-agent.newrelic.com/nr-spa-1216.min.js:2:1288)\n    at n (https://onboard.mshield-dev.taksure.xyz/newRelic.js:6:31552)\n    at Object.n [as emit] (https://onboard.mshield-dev.taksure.xyz/newRelic.js:6:31474)\n    at XMLHttpRequest.o (https://onboard.mshield-dev.taksure.xyz/newRelic.js:6:12751)\n    at XMLHttpRequest.nrWrapper (https://onboard.mshield-dev.taksure.xyz/newRelic.js:6:35059)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
