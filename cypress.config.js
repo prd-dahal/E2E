@@ -18,5 +18,10 @@ module.exports = defineConfig({
     screenshotsFolder: "BDD/screenshots",
     videosFolder: "BDD/videos",
     downloadsFolder: "BDD/downloads",
+    env: {
+      CYPRESS_DASHBOARD_URL: "https://dashboard.v2.taksure.xyz/api/v1/",
+      CYPRESS_DASHBOARD_USERNAME: "taksure",
+      CYPRESS_DASHBOARD_PASSWORD: "taksure$$$123",
+    },
   },
 });

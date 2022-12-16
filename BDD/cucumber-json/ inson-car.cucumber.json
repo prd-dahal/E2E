@@ -6,13 +6,13 @@
     "line": 1,
     "id": "mshield-test",
     "tags": [],
-    "uri": "mshield.feature",
+    "uri": " inson-car.feature",
     "elements": [
       {
-        "id": "mshield-test;visit-mshield",
+        "id": "mshield-test;inson-car-normal-flow",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Visit Mshield",
+        "name": "Inson Car Normal Flow",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I visit url \"https://onboard.v2.taksure.xyz/en-GB/car-insurance/form\"",
             "result": {
               "status": "passed",
-              "duration": 4826000000
+              "duration": 2268000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "click on TAG \"button\" that contains TEXT \"Skip to standard quote\"",
             "result": {
               "status": "passed",
-              "duration": 144000000
+              "duration": 170000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "select TEXT \"HAVAL\" of SELECTORNAME \"name\" and SELECTORVALUE \"make\"",
             "result": {
               "status": "passed",
-              "duration": 933000000
+              "duration": 1011000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "select TEXT \"H2\" of SELECTORNAME \"name\" and SELECTORVALUE \"model\"",
             "result": {
               "status": "passed",
-              "duration": 195000000
+              "duration": 192000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "select TEXT \"2022\" of SELECTORNAME \"name\" and SELECTORVALUE \"modelYear\"",
             "result": {
               "status": "passed",
-              "duration": 265000000
+              "duration": 248000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "click on TAG \"p\" that contains TEXT \"Standard\"",
             "result": {
               "status": "passed",
-              "duration": 208000000
+              "duration": 203000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "select date \"18 Feb 2023\" on SELECTORNAME \"insuranceStartDate\"",
             "result": {
               "status": "passed",
-              "duration": 1210000000
+              "duration": 1241000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "click on TAG \"span\" that contains TEXT \"I agree with the \"",
             "result": {
               "status": "passed",
-              "duration": 283000000
+              "duration": 225000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
             "result": {
               "status": "passed",
-              "duration": 146000000
+              "duration": 149000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"+998\"",
             "result": {
               "status": "passed",
-              "duration": 616000000
+              "duration": 550000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"+977\"",
             "result": {
               "status": "passed",
-              "duration": 129000000
+              "duration": 124000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "type TEXT \"9849354809\" on SELECTORNAME \"name\" SELECTORVALUE \"phoneNumber\"",
             "result": {
               "status": "passed",
-              "duration": 416000000
+              "duration": 436000000
             }
           },
           {
@@ -143,17 +143,17 @@
             "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
             "result": {
               "status": "passed",
-              "duration": 126000000
+              "duration": 127000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "FILLOTP",
+            "name": "FillOTP PHONE_NUMBER \"+9779849354809\"",
             "result": {
-              "status": "undefined",
-              "duration": 15000000
+              "status": "passed",
+              "duration": 5150000000
             }
           }
         ]
