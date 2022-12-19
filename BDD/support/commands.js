@@ -28,7 +28,7 @@ Cypress.Commands.add("fillOtp", (otp) => {
   cy.get('input[inputmode="numeric"]').eq(3).type(resolvedOtp[3]);
   cy.get('input[inputmode="numeric"]').eq(4).type(resolvedOtp[4]);
   cy.get('input[inputmode="numeric"]').eq(5).type(resolvedOtp[5]);
-  cy.wait(3000);
+  cy.wait("@verifyOTP");
 });
 
 Cypress.Commands.add("fillDate", (splittedDate, selector) => {
@@ -46,26 +46,27 @@ Cypress.Commands.add("fillDate", (splittedDate, selector) => {
 });
 
 Cypress.Commands.add("fillOtpAPI", (PHONE_NUMBER) => {
-  console.log("Phone number", PHONE_NUMBER);
-  cy.request("POST", `${Cypress.env("CYPRESS_DASHBOARD_URL")}user/auth`, {
-    username: Cypress.env("CYPRESS_DASHBOARD_USERNAME"),
-    password: Cypress.env("CYPRESS_DASHBOARD_PASSWORD"),
-  }).then((adminAuthResponse) => {
-    cy.request({
-      method: "GET",
-      url: `${Cypress.env(
-        "CYPRESS_DASHBOARD_URL"
-      )}test/log/?phone_number=${PHONE_NUMBER}&type=otp&limit=1`, // baseUrl is prepend to URL
-      headers: {
-        Authorization: `Bearer ${adminAuthResponse?.body?.access}`,
-      },
-    }).then((response) => {
-      // response.body is automatically serialized into JSON
-      expect(response.status).is.equal(200); // true
-      cy.wait(2000);
-      const messageArray = response?.body[0].message.split(" ");
-      const otp = messageArray[messageArray.length - 1];
-      cy.fillOtp(otp);
+  cy.wait("@sendOTP").then(() => {
+    cy.request("POST", `${Cypress.env("CYPRESS_DASHBOARD_URL")}user/auth`, {
+      username: Cypress.env("CYPRESS_DASHBOARD_USERNAME"),
+      password: Cypress.env("CYPRESS_DASHBOARD_PASSWORD"),
+    }).then((adminAuthResponse) => {
+      cy.request({
+        method: "GET",
+        url: `${Cypress.env(
+          "CYPRESS_DASHBOARD_URL"
+        )}test/log/?phone_number=${PHONE_NUMBER}&type=otp&limit=1`, // baseUrl is prepend to URL
+        headers: {
+          Authorization: `Bearer ${adminAuthResponse?.body?.access}`,
+        },
+      }).then((response) => {
+        // response.body is automatically serialized into JSON
+        expect(response.status).is.equal(200); // true
+        cy.wait(2000);
+        const messageArray = response?.body[0].message.split(" ");
+        const otp = messageArray[messageArray.length - 1];
+        cy.fillOtp(otp);
+      });
     });
   });
 });

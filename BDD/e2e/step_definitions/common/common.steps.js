@@ -1,12 +1,9 @@
 import { Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 import { splitDateIntoDayMonthYear } from "../../step_definitions/utils/index.js";
-
-cy.intercept(
-  "POST",
-  `${Cypress.env("CMS_API")}travel-insurance/registrations/otp/`
-).as("sendOTP");
+import { commonInterceptors } from "../../../support/interceptors";
 
 When("I visit url {string}", (url) => {
+  commonInterceptors();
   cy.visit(url);
 });
 
@@ -54,12 +51,16 @@ Then("FillOTP PHONE_NUMBER {string}", (PHONE_NUMBER) => {
   cy.fillOtpAPI(PHONE_NUMBER);
 });
 
+Then("wait for {string} miliseconds", (seconds) => {
+  cy.wait(Number(seconds));
+});
+
 Then(
   "Upload IMAGE {string} on SELECTORNAME {string} SELECTORVALUE {string}",
   (IMAGE, SELECTORNAME, SELECTORVALUE) => {
-    console.log("Hello world", IMAGE, SELECTORNAME, SELECTORVALUE);
     cy.get(`[${SELECTORNAME}="${SELECTORVALUE}"]`).selectFile(
       `${Cypress.env("CYPRESS_IMAGE_PATH")}${IMAGE}`
     );
+    cy.wait("@uploadImage");
   }
 );

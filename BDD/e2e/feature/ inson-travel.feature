@@ -16,6 +16,7 @@
     Then click on TAG "button" SELECTORNAME "data-testid" SELECTORVALUE "nextBtn"
 
     Then click on SELECTORNAME "for" SELECTORVALUE "platinum"
+  
     Then click on TAG "button" SELECTORNAME "type" SELECTORVALUE "submit"
 
     Then click on SELECTORNAME "data-testid" SELECTORVALUE "+998"
@@ -27,10 +28,11 @@
     Then Upload IMAGE "passport.jpg" on SELECTORNAME "name" SELECTORVALUE "passportFront"
     Then click on TAG "button" SELECTORNAME "data-testid" SELECTORVALUE "nextBtn"
 
-    Then click on TAG "p" that contains TEXT "Confirm"
+    Then wait for "2000" miliseconds
+    Then click on TAG "button" that contains TEXT "Confirm"
 
-    Then click on TAG "label" that contains TEXT "Yes, I have read and agree to the"
-    Then click on TAG "p" that contains TEXT "Confirm"
+    Then click on SELECTORNAME "for" SELECTORVALUE "confirm"
+    Then click on TAG "button" that contains TEXT "Confirm"
 
     Then type TEXT "pradeep.dahal@hazesoft.co" on SELECTORNAME "name" SELECTORVALUE "email"
     Then click on TAG "p" that contains TEXT "Confirm"

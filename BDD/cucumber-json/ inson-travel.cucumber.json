@@ -23,7 +23,7 @@
             "name": "I visit url \"https://onboard.v2.taksure.xyz/en-GB/travel-insurance/form\"",
             "result": {
               "status": "passed",
-              "duration": 3787000000
+              "duration": 7137000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "select TEXT \"Afghanistan\" of SELECTORNAME \"name\" and SELECTORVALUE \"destinationCountry\"",
             "result": {
               "status": "passed",
-              "duration": 234000000
+              "duration": 240000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "click on TAG \"span\" that contains TEXT \"Single Trip\"",
             "result": {
               "status": "passed",
-              "duration": 162000000
+              "duration": 185000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "select date \"18 Feb 2023\" on SELECTORNAME \"insuranceStartDate\"",
             "result": {
               "status": "passed",
-              "duration": 1298000000
+              "duration": 1328000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "select date \"18 Mar 2023\" on SELECTORNAME \"insuranceEndDate\"",
             "result": {
               "status": "passed",
-              "duration": 1260000000
+              "duration": 1156000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "click on TAG \"span\" that contains TEXT \"Tourism\"",
             "result": {
               "status": "passed",
-              "duration": 226000000
+              "duration": 232000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
             "result": {
               "status": "passed",
-              "duration": 154000000
+              "duration": 148000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "select date \"18 Feb 1998\" on SELECTORNAME \"travellersBirthDate\"",
             "result": {
               "status": "passed",
-              "duration": 1399000000
+              "duration": 1418000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
             "result": {
               "status": "passed",
-              "duration": 136000000
+              "duration": 140000000
             }
           },
           {
@@ -113,121 +113,133 @@
             "name": "click on SELECTORNAME \"for\" SELECTORVALUE \"platinum\"",
             "result": {
               "status": "passed",
-              "duration": 724000000
+              "duration": 751000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
+            "line": 20,
             "name": "click on TAG \"button\" SELECTORNAME \"type\" SELECTORVALUE \"submit\"",
             "result": {
               "status": "passed",
-              "duration": 750000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"+998\"",
-            "result": {
-              "status": "passed",
-              "duration": 527000000
+              "duration": 2745000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 22,
-            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"+977\"",
+            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"+998\"",
             "result": {
               "status": "passed",
-              "duration": 141000000
+              "duration": 515000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 23,
-            "name": "type TEXT \"9849354809\" on SELECTORNAME \"name\" SELECTORVALUE \"phoneNumber\"",
+            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"+977\"",
             "result": {
               "status": "passed",
-              "duration": 437000000
+              "duration": 132000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 24,
-            "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
+            "name": "type TEXT \"9849354809\" on SELECTORNAME \"name\" SELECTORVALUE \"phoneNumber\"",
             "result": {
               "status": "passed",
-              "duration": 145000000
+              "duration": 491000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 25,
-            "name": "FillOTP PHONE_NUMBER \"+9779849354809\"",
+            "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
             "result": {
               "status": "passed",
-              "duration": 7528000000
+              "duration": 155000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 27,
-            "name": "Upload IMAGE \"passport.jpg\" on SELECTORNAME \"name\" SELECTORVALUE \"passportFront\"",
+            "line": 26,
+            "name": "FillOTP PHONE_NUMBER \"+9779849354809\"",
             "result": {
               "status": "passed",
-              "duration": 119000000
+              "duration": 7726000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 28,
-            "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
+            "name": "Upload IMAGE \"passport.jpg\" on SELECTORNAME \"name\" SELECTORVALUE \"passportFront\"",
             "result": {
-              "status": "failed",
-              "duration": 4089000000,
-              "error_message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is `disabled`:\n\n`<button disabled=\"\" type=\"submit\" class=\"chakra-button css-hg9nmi\" data-testid=\"nextBtn\">Next</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n    at $Cy.ensureNotDisabled (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:147552:76)\n    at runAllChecks (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:133469:14)\n    at retryActionability (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:133546:16)\nFrom previous event:\n    at whenStable (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:152819:65)\n    at <unknown> (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:152244:14)\nFrom previous event:\n    at $Cy.retry (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:152224:76)\n    at retryActionability (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:133549:19)\n    at <unknown> (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:133553:12)\nFrom previous event:\n    at Object.verify (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:133458:61)\n    at perform (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:135509:77)\nFrom previous event:\n    at mouseAction (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:135547:60)\n    at Context.click (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:135566:14)\n    at wrapped (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:157508:19)\nFrom Your Spec Code:\n    at Context.eval (BDD/support/commands.js:64:6)"
+              "status": "passed",
+              "duration": 11735000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 30,
-            "name": "click on TAG \"p\" that contains TEXT \"Confirm\"",
+            "line": 29,
+            "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 137000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "wait for \"2000\" miliseconds",
+            "result": {
+              "status": "passed",
+              "duration": 2019000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 32,
-            "name": "click on TAG \"label\" that contains TEXT \"Yes, I have read and agree to the\"",
+            "name": "click on TAG \"button\" that contains TEXT \"Confirm\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 153000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 33,
-            "name": "click on TAG \"p\" that contains TEXT \"Confirm\"",
+            "line": 34,
+            "name": "click on TAG \"input\" SELECTORNAME \"type\" SELECTORVALUE \"checkbox\"",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 5239000000,
+              "error_message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<input class=\"chakra-checkbox__input\" type=\"checkbox\" id=\"confirm\" value=\"\" style=\"border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;\">`\n\nis being covered by another element:\n\n`<span class=\"chakra-checkbox__control css-1oi6yiz\" aria-hidden=\"true\"></span>`\n\nFix this problem, or use {force: true} to disable error checking.\n    at $Cy.ensureDescendents (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:147749:78)\n    at ensureDescendents (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:133193:8)\n    at ensureDescendentsAndScroll (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:133200:14)\n    at ensureElIsNotCovered (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:133332:5)\n    at runAllChecks (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:133522:52)\n    at retryActionability (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:133546:16)\nFrom previous event:\n    at whenStable (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:152819:65)\n    at <unknown> (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:152244:14)\nFrom previous event:\n    at $Cy.retry (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:152224:76)\n    at retryActionability (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:133549:19)\n    at <unknown> (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:133553:12)\nFrom previous event:\n    at Object.verify (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:133458:61)\n    at perform (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:135509:77)\nFrom previous event:\n    at mouseAction (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:135547:60)\n    at Context.click (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:135566:14)\n    at wrapped (https://onboard.v2.taksure.xyz/__cypress/runner/cypress_runner.js:157508:19)\nFrom Your Spec Code:\n    at Context.eval (BDD/e2e/step_definitions/common/common.steps.js:27:55)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 35,
+            "name": "click on TAG \"button\" that contains TEXT \"Confirm\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
             "name": "type TEXT \"pradeep.dahal@hazesoft.co\" on SELECTORNAME \"name\" SELECTORVALUE \"email\"",
             "result": {
               "status": "skipped"
@@ -236,7 +248,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 36,
+            "line": 38,
             "name": "click on TAG \"p\" that contains TEXT \"Confirm\"",
             "result": {
               "status": "skipped"
