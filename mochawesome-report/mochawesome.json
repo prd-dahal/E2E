@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-12-15T04:36:31.267Z",
-    "end": "2022-12-15T04:36:31.378Z",
-    "duration": 111,
+    "failures": 1,
+    "start": "2022-12-19T08:28:54.846Z",
+    "end": "2022-12-19T08:28:55.367Z",
+    "duration": 521,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3649122d-5ffb-4bfb-a8e0-e2a9be091422",
+      "uuid": "c2c81a86-4d41-4db7-8b7c-d250654c2f97",
       "title": "",
       "fullFile": "BDD/e2e/feature/example.feature",
       "file": "BDD/e2e/feature/example.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "62611462-3fa8-40d7-be9d-380a36311edc",
+          "uuid": "8be2bda6-59ce-4874-ae50-04f747b45aa2",
           "title": "Example Test",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "Truthly value is true",
               "fullTitle": "Example Test Truthly value is true",
               "timedOut": null,
-              "duration": 41,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
+              "duration": 183,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "711c03e9-742a-49bb-966d-9019c0552dd0",
-              "parentUUID": "62611462-3fa8-40d7-be9d-380a36311edc",
+              "err": {
+                "message": "Error: Step implementation missing for: I am on \"home page\"",
+                "estack": "Error: Step implementation missing for: I am on \"home page\"\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:199:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "5ace4c0c-ab0c-40a1-a617-1a00600d65e7",
+              "parentUUID": "8be2bda6-59ce-4874-ae50-04f747b45aa2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "711c03e9-742a-49bb-966d-9019c0552dd0"
+          "passes": [],
+          "failures": [
+            "5ace4c0c-ab0c-40a1-a617-1a00600d65e7"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 41,
+          "duration": 183,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -80,6 +80,21 @@ Cypress.Commands.add("fillOtpAPI", (PHONE_NUMBER) => {
     });
   });
 });
+Cypress.Commands.add("removeUser", (PHONE_NUMBER) => {
+  cy.request({
+    method: "DELETE",
+    url: `${Cypress.env(
+      "CYPRESS_DASHBOARD_URL"
+    )}user/${PHONE_NUMBER}/delete-user`,
+    headers: {
+      Authorization: `Basic ${btoa(
+        `${Cypress.env("CYPRESS_DASHBOARD_USERNAME")}:${Cypress.env(
+          "CYPRESS_DASHBOARD_PASSWORD"
+        )}`
+      )}}`,
+    },
+  });
+});
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })

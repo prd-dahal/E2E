@@ -2,6 +2,10 @@ import { Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 import { splitDateIntoDayMonthYear } from "../../step_definitions/utils/index.js";
 import { commonInterceptors } from "../../../support/interceptors";
 
+Given("my previous records are deleted of {string}", (PHONE_NUMBER) => {
+  cy.removeUser(PHONE_NUMBER);
+});
+
 When("I visit url {string}", (url) => {
   commonInterceptors();
   cy.visit(url);

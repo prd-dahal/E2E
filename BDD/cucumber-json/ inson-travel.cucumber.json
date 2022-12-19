@@ -18,289 +18,139 @@
         "steps": [
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Given ",
             "line": 6,
+            "name": "my previous records are deleted of \"9779849354809\"",
+            "result": {
+              "status": "passed",
+              "duration": 1370000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
             "name": "I visit url \"http://localhost:3000/travel-insurance/form\"",
             "result": {
               "status": "passed",
-              "duration": 10308000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "select TEXT \"Afghanistan\" of SELECTORNAME \"name\" and SELECTORVALUE \"destinationCountry\"",
-            "result": {
-              "status": "passed",
-              "duration": 249000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "click on TAG \"span\" that contains TEXT \"Single Trip\"",
-            "result": {
-              "status": "passed",
-              "duration": 209000000
+              "duration": 11994000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "select date \"18 Feb 2023\" on SELECTORNAME \"insuranceStartDate\"",
+            "name": "select TEXT \"Afghanistan\" of SELECTORNAME \"name\" and SELECTORVALUE \"destinationCountry\"",
             "result": {
               "status": "passed",
-              "duration": 1375000000
+              "duration": 263000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "select date \"18 Mar 2023\" on SELECTORNAME \"insuranceEndDate\"",
+            "name": "click on TAG \"span\" that contains TEXT \"Single Trip\"",
             "result": {
               "status": "passed",
-              "duration": 1253000000
+              "duration": 206000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 12,
-            "name": "click on TAG \"span\" that contains TEXT \"Tourism\"",
+            "name": "select date \"18 Feb 2023\" on SELECTORNAME \"insuranceStartDate\"",
             "result": {
               "status": "passed",
-              "duration": 244000000
+              "duration": 1516000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 13,
-            "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
+            "name": "select date \"18 Mar 2023\" on SELECTORNAME \"insuranceEndDate\"",
             "result": {
               "status": "passed",
-              "duration": 151000000
+              "duration": 1234000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "click on TAG \"span\" that contains TEXT \"Tourism\"",
+            "result": {
+              "status": "passed",
+              "duration": 248000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 15,
-            "name": "select date \"18 Feb 1998\" on SELECTORNAME \"travellersBirthDate\"",
+            "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
             "result": {
               "status": "passed",
-              "duration": 1344000000
+              "duration": 161000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 16,
-            "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
+            "line": 17,
+            "name": "select date \"18 Feb 1998\" on SELECTORNAME \"travellersBirthDate\"",
             "result": {
               "status": "passed",
-              "duration": 138000000
+              "duration": 1433000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "click on SELECTORNAME \"for\" SELECTORVALUE \"platinum\"",
+            "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
             "result": {
               "status": "passed",
-              "duration": 177000000
+              "duration": 170000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
-            "name": "click on TAG \"button\" SELECTORNAME \"type\" SELECTORVALUE \"submit\"",
+            "name": "click on SELECTORNAME \"for\" SELECTORVALUE \"platinum\"",
             "result": {
               "status": "passed",
-              "duration": 3032000000
+              "duration": 139000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 22,
-            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"+998\"",
+            "name": "click on TAG \"button\" SELECTORNAME \"type\" SELECTORVALUE \"submit\"",
             "result": {
               "status": "passed",
-              "duration": 250000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 23,
-            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"+977\"",
-            "result": {
-              "status": "passed",
-              "duration": 190000000
+              "duration": 880000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 24,
-            "name": "type TEXT \"9849354809\" on SELECTORNAME \"name\" SELECTORVALUE \"phoneNumber\"",
+            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"+998\"",
             "result": {
               "status": "passed",
-              "duration": 488000000
+              "duration": 366000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 25,
-            "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
-            "result": {
-              "status": "passed",
-              "duration": 128000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 26,
-            "name": "FillOTP PHONE_NUMBER \"+9779849354809\"",
-            "result": {
-              "status": "passed",
-              "duration": 7611000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 28,
-            "name": "Upload IMAGE \"passport.jpg\" on SELECTORNAME \"name\" SELECTORVALUE \"passportFront\"",
-            "result": {
-              "status": "passed",
-              "duration": 11001000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
-            "result": {
-              "status": "passed",
-              "duration": 237000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 31,
-            "name": "wait for \"2000\" miliseconds",
-            "result": {
-              "status": "passed",
-              "duration": 2022000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 32,
-            "name": "click on TAG \"button\" that contains TEXT \"Confirm\"",
-            "result": {
-              "status": "passed",
-              "duration": 159000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 34,
-            "name": "click on SELECTORNAME \"for\" SELECTORVALUE \"confirm\"",
-            "result": {
-              "status": "passed",
-              "duration": 866000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 35,
-            "name": "click on TAG \"button\" that contains TEXT \"Confirm\"",
-            "result": {
-              "status": "passed",
-              "duration": 210000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 37,
-            "name": "type TEXT \"pradeep.dahal@hazesoft.co\" on SELECTORNAME \"name\" SELECTORVALUE \"email\"",
-            "result": {
-              "status": "passed",
-              "duration": 1693000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 38,
-            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"email-confirm-button\"",
-            "result": {
-              "status": "passed",
-              "duration": 110000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 39,
-            "name": "wait until user are registered",
-            "result": {
-              "status": "passed",
-              "duration": 815000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 40,
-            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"payme\"",
-            "result": {
-              "status": "passed",
-              "duration": 128000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 41,
-            "name": "type TEXT \"8600495473316478\" on SELECTORNAME \"name\" SELECTORVALUE \"paycomCard\"",
-            "result": {
-              "status": "passed",
-              "duration": 1376000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 42,
-            "name": "type TEXT \"03\" on SELECTORNAME \"name\" SELECTORVALUE \"paycomExpiryMonth\"",
-            "result": {
-              "status": "passed",
-              "duration": 241000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 43,
-            "name": "type TEXT \"99\" on SELECTORNAME \"name\" SELECTORVALUE \"paycomExpiryYear\"",
+            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"+977\"",
             "result": {
               "status": "passed",
               "duration": 233000000
@@ -309,21 +159,181 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 44,
-            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"paycomBtn\"",
+            "line": 26,
+            "name": "type TEXT \"9849354809\" on SELECTORNAME \"name\" SELECTORVALUE \"phoneNumber\"",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 503000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
+            "result": {
+              "status": "passed",
+              "duration": 137000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "FillOTP PHONE_NUMBER \"+9779849354809\"",
+            "result": {
+              "status": "passed",
+              "duration": 6879000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Upload IMAGE \"passport.jpg\" on SELECTORNAME \"name\" SELECTORVALUE \"passportFront\"",
+            "result": {
+              "status": "passed",
+              "duration": 11477000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
+            "result": {
+              "status": "passed",
+              "duration": 247000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "wait for \"2000\" miliseconds",
+            "result": {
+              "status": "passed",
+              "duration": 2026000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "click on TAG \"button\" that contains TEXT \"Confirm\"",
+            "result": {
+              "status": "passed",
+              "duration": 172000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "click on SELECTORNAME \"for\" SELECTORVALUE \"confirm\"",
+            "result": {
+              "status": "passed",
+              "duration": 576000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "click on TAG \"button\" that contains TEXT \"Confirm\"",
+            "result": {
+              "status": "passed",
+              "duration": 179000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "type TEXT \"pradeep.dahal@hazesoft.co\" on SELECTORNAME \"name\" SELECTORVALUE \"email\"",
+            "result": {
+              "status": "passed",
+              "duration": 1548000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"email-confirm-button\"",
+            "result": {
+              "status": "passed",
+              "duration": 125000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "wait until user are registered",
+            "result": {
+              "status": "passed",
+              "duration": 1247000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"payme\"",
+            "result": {
+              "status": "passed",
+              "duration": 200000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "type TEXT \"8600495473316478\" on SELECTORNAME \"name\" SELECTORVALUE \"paycomCard\"",
+            "result": {
+              "status": "passed",
+              "duration": 1307000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "type TEXT \"03\" on SELECTORNAME \"name\" SELECTORVALUE \"paycomExpiryMonth\"",
+            "result": {
+              "status": "passed",
+              "duration": 265000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 45,
+            "name": "type TEXT \"99\" on SELECTORNAME \"name\" SELECTORVALUE \"paycomExpiryYear\"",
+            "result": {
+              "status": "passed",
+              "duration": 274000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"paycomBtn\"",
+            "result": {
+              "status": "passed",
+              "duration": 142000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
             "name": "payme fillOtp with \"666666\"",
             "result": {
               "status": "passed",
-              "duration": 4856000000
+              "duration": 2151000000
             }
           }
         ]

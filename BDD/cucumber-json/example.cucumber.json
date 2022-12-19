@@ -22,8 +22,7 @@
             "line": 5,
             "name": "I am on \"home page\"",
             "result": {
-              "status": "passed",
-              "duration": 60000000
+              "status": "undefined"
             }
           },
           {
@@ -32,8 +31,7 @@
             "line": 6,
             "name": "I view the page from \"iphone6\"",
             "result": {
-              "status": "passed",
-              "duration": 2000000
+              "status": "skipped"
             }
           },
           {
@@ -42,8 +40,7 @@
             "line": 9,
             "name": "A truthy value is true",
             "result": {
-              "status": "passed",
-              "duration": 5000000
+              "status": "skipped"
             }
           }
         ]
