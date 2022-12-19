@@ -39,6 +39,10 @@ Then(
   }
 );
 
+Then("click on DATA-TESTID {string}", (SELECTORVALUE) => {
+  cy.get(`[data-testid="${SELECTORVALUE}"]`).click({ force: true });
+});
+
 Then(
   "type TEXT {string} on SELECTORNAME {string} SELECTORVALUE {string}",
   (TEXT, SELECTORNAME, SELECTORVALUE) => {
@@ -69,7 +73,7 @@ Then(
   }
 );
 
-Then("wait until user are registered", () => {
+Then("wait until user is registered", () => {
   cy.wait("@registeredUser");
 });
 

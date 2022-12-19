@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2022-12-19T08:28:54.846Z",
-    "end": "2022-12-19T08:28:55.367Z",
-    "duration": 521,
+    "start": "2022-12-19T09:44:28.444Z",
+    "end": "2022-12-19T09:44:29.156Z",
+    "duration": 712,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c2c81a86-4d41-4db7-8b7c-d250654c2f97",
+      "uuid": "6355efa5-5780-4564-a3d0-1ca47c01f794",
       "title": "",
       "fullFile": "BDD/e2e/feature/example.feature",
       "file": "BDD/e2e/feature/example.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8be2bda6-59ce-4874-ae50-04f747b45aa2",
+          "uuid": "de53f8db-dc9c-4531-8975-52d5da6c1e84",
           "title": "Example Test",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Truthly value is true",
               "fullTitle": "Example Test Truthly value is true",
               "timedOut": null,
-              "duration": 183,
+              "duration": 249,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "Error: Step implementation missing for: I am on \"home page\"\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:199:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
                 "diff": null
               },
-              "uuid": "5ace4c0c-ab0c-40a1-a617-1a00600d65e7",
-              "parentUUID": "8be2bda6-59ce-4874-ae50-04f747b45aa2",
+              "uuid": "59975616-d428-4e58-ab44-e816ca73e704",
+              "parentUUID": "de53f8db-dc9c-4531-8975-52d5da6c1e84",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "5ace4c0c-ab0c-40a1-a617-1a00600d65e7"
+            "59975616-d428-4e58-ab44-e816ca73e704"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 183,
+          "duration": 249,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
