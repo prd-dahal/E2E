@@ -64,3 +64,11 @@ Then(
     cy.wait("@uploadImage");
   }
 );
+
+Then("wait until user are registered", () => {
+  cy.wait("@registeredUser");
+});
+
+Then("payme fillOtp with {string}", (OTP) => {
+  cy.fillOtpPayme(OTP);
+});

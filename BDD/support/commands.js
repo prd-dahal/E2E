@@ -31,6 +31,16 @@ Cypress.Commands.add("fillOtp", (otp) => {
   cy.wait("@verifyOTP");
 });
 
+Cypress.Commands.add("fillOtpPayme", (otp) => {
+  const resolvedOtp = otp.split("");
+  cy.get('input[inputmode="numeric"]').eq(0).type(resolvedOtp[0]);
+  cy.get('input[inputmode="numeric"]').eq(1).type(resolvedOtp[1]);
+  cy.get('input[inputmode="numeric"]').eq(2).type(resolvedOtp[2]);
+  cy.get('input[inputmode="numeric"]').eq(3).type(resolvedOtp[3]);
+  cy.get('input[inputmode="numeric"]').eq(4).type(resolvedOtp[4]);
+  cy.get('input[inputmode="numeric"]').eq(5).type(resolvedOtp[5]);
+});
+
 Cypress.Commands.add("fillDate", (splittedDate, selector) => {
   cy.get(`[data-testid=${selector}]`).within(() => {
     cy.get('[data-testid="date-day"]')
