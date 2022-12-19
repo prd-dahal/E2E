@@ -23,7 +23,7 @@
             "name": "I visit url \"https://onboard.v2.taksure.xyz/en-GB/car-insurance/form\"",
             "result": {
               "status": "passed",
-              "duration": 2268000000
+              "duration": 4447000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "click on TAG \"button\" that contains TEXT \"Skip to standard quote\"",
             "result": {
               "status": "passed",
-              "duration": 170000000
+              "duration": 192000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "select TEXT \"HAVAL\" of SELECTORNAME \"name\" and SELECTORVALUE \"make\"",
             "result": {
               "status": "passed",
-              "duration": 1011000000
+              "duration": 1053000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "select TEXT \"H2\" of SELECTORNAME \"name\" and SELECTORVALUE \"model\"",
             "result": {
               "status": "passed",
-              "duration": 192000000
+              "duration": 215000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "select TEXT \"2022\" of SELECTORNAME \"name\" and SELECTORVALUE \"modelYear\"",
             "result": {
               "status": "passed",
-              "duration": 248000000
+              "duration": 276000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "click on TAG \"p\" that contains TEXT \"Standard\"",
             "result": {
               "status": "passed",
-              "duration": 203000000
+              "duration": 272000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "select date \"18 Feb 2023\" on SELECTORNAME \"insuranceStartDate\"",
             "result": {
               "status": "passed",
-              "duration": 1241000000
+              "duration": 1205000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "click on TAG \"span\" that contains TEXT \"I agree with the \"",
             "result": {
               "status": "passed",
-              "duration": 225000000
+              "duration": 216000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
             "result": {
               "status": "passed",
-              "duration": 149000000
+              "duration": 150000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"+998\"",
             "result": {
               "status": "passed",
-              "duration": 550000000
+              "duration": 560000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "click on SELECTORNAME \"data-testid\" SELECTORVALUE \"+977\"",
             "result": {
               "status": "passed",
-              "duration": 124000000
+              "duration": 150000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "type TEXT \"9849354809\" on SELECTORNAME \"name\" SELECTORVALUE \"phoneNumber\"",
             "result": {
               "status": "passed",
-              "duration": 436000000
+              "duration": 459000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "click on TAG \"button\" SELECTORNAME \"data-testid\" SELECTORVALUE \"nextBtn\"",
             "result": {
               "status": "passed",
-              "duration": 127000000
+              "duration": 128000000
             }
           },
           {
@@ -152,8 +152,27 @@
             "line": 18,
             "name": "FillOTP PHONE_NUMBER \"+9779849354809\"",
             "result": {
-              "status": "passed",
-              "duration": 5150000000
+              "status": "failed",
+              "duration": 7536000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[inputmode=\"numeric\"]`, but never found it.\n    at Context.eval (BDD/support/commands.js:25:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Upload IMAGE \"front_id.jpg\" on SELECTORNAME \"name\" SELECTORVALUE \"carRegistrationFront\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Upload IMAGE \"back_id.jpg\" on SELECTORNAME \"name\" SELECTORVALUE \"carRegistrationFront\"",
+            "result": {
+              "status": "skipped"
             }
           }
         ]

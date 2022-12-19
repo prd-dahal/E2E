@@ -16,3 +16,6 @@
     Then type TEXT "9849354809" on SELECTORNAME "name" SELECTORVALUE "phoneNumber"
     Then click on TAG "button" SELECTORNAME "data-testid" SELECTORVALUE "nextBtn"
     Then FillOTP PHONE_NUMBER "+9779849354809"
+    Then Upload IMAGE "front_id.jpg" on SELECTORNAME "name" SELECTORVALUE "carRegistrationFront"
+    Then Upload IMAGE "back_id.jpg" on SELECTORNAME "name" SELECTORVALUE "carRegistrationBack"
+    Then Upload IMAGE "passport.jpg" on SELECTORNAME "name" SELECTORVALUE "passportFront"

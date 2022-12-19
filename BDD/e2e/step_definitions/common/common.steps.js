@@ -1,6 +1,11 @@
 import { Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 import { splitDateIntoDayMonthYear } from "../../step_definitions/utils/index.js";
 
+cy.intercept(
+  "POST",
+  `${Cypress.env("CMS_API")}travel-insurance/registrations/otp/`
+).as("sendOTP");
+
 When("I visit url {string}", (url) => {
   cy.visit(url);
 });
@@ -45,26 +50,16 @@ Then("select date {string} on SELECTORNAME {string}", (date, selector) => {
   cy.fillDate(splittedDate, selector);
 });
 
-Given("FillOTP PHONE_NUMBER {string}", (PHONE_NUMBER) => {
-  cy.request("POST", `${Cypress.env("CYPRESS_DASHBOARD_URL")}user/auth`, {
-    username: Cypress.env("CYPRESS_DASHBOARD_USERNAME"),
-    password: Cypress.env("CYPRESS_DASHBOARD_PASSWORD"),
-  }).then((adminAuthResponse) => {
-    cy.request({
-      method: "GET",
-      url: `${Cypress.env(
-        "CYPRESS_DASHBOARD_URL"
-      )}test/log/?phone_number=${PHONE_NUMBER}&type=otp&limit=1`, // baseUrl is prepend to URL
-      headers: {
-        Authorization: `Bearer ${adminAuthResponse?.body?.access}`,
-      },
-    }).then((response) => {
-      // response.body is automatically serialized into JSON
-      expect(response.status).is.equal(200); // true
-      cy.wait(2000);
-      const messageArray = response?.body[0].message.split(" ");
-      const otp = messageArray[messageArray.length - 1];
-      cy.fillOtp(otp);
-    });
-  });
+Then("FillOTP PHONE_NUMBER {string}", (PHONE_NUMBER) => {
+  cy.fillOtpAPI(PHONE_NUMBER);
 });
+
+Then(
+  "Upload IMAGE {string} on SELECTORNAME {string} SELECTORVALUE {string}",
+  (IMAGE, SELECTORNAME, SELECTORVALUE) => {
+    console.log("Hello world", IMAGE, SELECTORNAME, SELECTORVALUE);
+    cy.get(`[${SELECTORNAME}="${SELECTORVALUE}"]`).selectFile(
+      `${Cypress.env("CYPRESS_IMAGE_PATH")}${IMAGE}`
+    );
+  }
+);

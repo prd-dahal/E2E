@@ -22,6 +22,7 @@ module.exports = defineConfig({
       CYPRESS_DASHBOARD_URL: "https://dashboard.v2.taksure.xyz/api/v1/",
       CYPRESS_DASHBOARD_USERNAME: "taksure",
       CYPRESS_DASHBOARD_PASSWORD: "taksure$$$123",
+      CYPRESS_IMAGE_PATH: "BDD/fixtures/images/",
     },
   },
 });
